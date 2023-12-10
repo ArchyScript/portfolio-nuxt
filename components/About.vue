@@ -34,7 +34,7 @@
       <div class="w-full h-full flex-1 lg:flex-2">
         <img
           class="img w-full h-full rounded-md bg-cover"
-          src="me.png"
+          src="/me.png"
           alt="Headshot"
         />
       </div>
