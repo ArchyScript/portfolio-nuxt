@@ -1,0 +1,170 @@
+export const techs = [
+  { title: "All" },
+  { title: "Vue JS" },
+  { title: "Nuxt JS" },
+  { title: "React JS" },
+  { title: "Javascript" },
+  { title: "Typescript" },
+  { title: "Tailwind" },
+  { title: "HTML" },
+  { title: "CSS" },
+  { title: "Node JS" },
+  { title: "Bootstrap" },
+  { title: "Vuetify" },
+]
+
+export const librariesAndFrameworks = [
+  { title: "All" },
+  { title: "languages" },
+  { title: "frameworks" },
+  // { title: "libraries" },
+  { title: "tools" },
+  { title: "databases" },
+]
+
+export const toolsAndFrameworks = [
+  {
+    icon: "html",
+    title: "HTML",
+    rating: 5,
+    category: "languages",
+  },
+  {
+    icon: "css",
+    title: "CSS",
+    rating: 5,
+    category: "languages",
+  },
+  {
+    icon: "js",
+    title: "Javascript",
+    rating: 5,
+    category: "languages",
+  },
+  {
+    icon: "ts",
+    title: "Typescript",
+    rating: 5,
+    category: "languages",
+  },
+  {
+    icon: "vue",
+    title: "Vue JS",
+    rating: 5,
+    category: "frameworks",
+  },
+  {
+    icon: "nuxt",
+    title: "Nuxt JS",
+    rating: 5,
+    category: "frameworks",
+  },
+  {
+    icon: "react",
+    title: "React JS",
+    rating: 5,
+    category: "frameworks",
+  },
+  {
+    icon: "materialui",
+    title: "Material UI",
+    rating: 4,
+    category: "frameworks",
+  },
+  {
+    icon: "tailwind",
+    title: "Tailwind",
+    rating: 5,
+    category: "frameworks",
+  },
+  {
+    icon: "bootstrap",
+    title: "Bootstrap",
+    rating: 5,
+    category: "frameworks",
+  },
+  // {
+  //   icon: "pinia",
+  //   title: "Pinia",
+  //   rating: 5,
+  //   category: "frameworks",
+  // },
+  {
+    icon: "vuetify",
+    title: "Vuetify",
+    rating: 5,
+    category: "frameworks",
+  },
+  {
+    icon: "node",
+    title: "Node JS",
+    rating: 4,
+    category: "frameworks",
+  },
+  {
+    icon: "mongodb",
+    title: "Mongodb",
+    rating: 5,
+    category: "databases",
+  },
+  {
+    icon: "express",
+    title: "Express",
+    rating: 4,
+    category: "frameworks",
+  },
+  {
+    icon: "gitlab",
+    title: "Gitlab",
+    rating: 5,
+    category: "tools",
+  },
+  {
+    icon: "github",
+    title: "Github",
+    rating: 5,
+    category: "tools",
+  },
+  {
+    icon: "sass",
+    title: "SASS",
+    rating: 3,
+    category: "frameworks",
+  },
+  {
+    icon: "figma",
+    title: "Figma",
+    rating: 2,
+    category: "tools",
+  },
+  {
+    icon: "netlify",
+    title: "Netlify",
+    rating: 4,
+    category: "tools",
+  },
+  {
+    icon: "next",
+    title: "Next JS",
+    rating: 2,
+    category: "frameworks",
+  },
+  {
+    icon: "vscode",
+    title: "Vs Code",
+    rating: 5,
+    category: "tools",
+  },
+  {
+    icon: "sublime",
+    title: "Sublime",
+    rating: 5,
+    category: "tools",
+  },
+  // {
+  //   icon: 'js',
+  //   title: 'Express',
+  //   rating: 4,
+  //   category: 'frameworks'
+  // },
+]

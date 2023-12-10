@@ -1,0 +1,56 @@
+* {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: #8892b0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ab4473;
+  opacity: 0;
+  border-radius: 40px;
+}
+
+body {
+  @apply bg-primary;
+}
+
+.trans {
+  @apply transition-all duration-300;
+}
+
+section {
+  @apply mx-auto px-10 py-10 my-10 text-white min-h-screen w-full max-w-[1200px];
+}
+
+.text-large {
+  font-size: clamp(40px, 8.8vw, 60px);
+  font-weight: 600;
+}
+
+.mouse-trail {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: background-color 0.3s ease;
+}
+
+.light-bulb {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center center;
+}
