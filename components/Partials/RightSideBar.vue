@@ -31,6 +31,32 @@
 
 <script setup lang="ts">
   import gsap from "gsap"
+  const activeLink = ref("")
+
+  const setActiveLink = (link: string) => {
+    activeLink.value = link
+  }
+  onMounted(() => {
+    gsap.fromTo(
+      ".nav-link",
+      { opacity: 0, x: 20 },
+      {
+        opacity: 1,
+        x: 0,
+        stagger: 0.2,
+        duration: 0.35,
+        delay: 1.75,
+        ease: "linear",
+      }
+    )
+
+    // // Check the active link on initial load
+    // setActiveLink(getActiveLink());
+    // // Add a scroll listener to update the active link on scroll
+    // window.addEventListener('scroll', () => {
+    //   setActiveLink(getActiveLink());
+    // });
+  })
 
   onMounted(() => {
     gsap.fromTo(
