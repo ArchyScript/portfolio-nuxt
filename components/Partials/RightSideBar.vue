@@ -1,7 +1,7 @@
 <template>
   <nav
     aria-label="site"
-    class="fixed overflow-auto h-full z-50 border-l border-secondary hidden md:flex min-w-[60px] justify-between items-center font-Chakra py-6 top-0 md:right-0 right-5 !text-secondary flex-col space-y-8"
+    class="fixed overflow-auto h-full z-50 border-l border-secondary hidden md:flex min-w-[60px] justify-between items-center py-6 top-0 md:right-0 right-5 !text-secondary flex-col space-y-8"
   >
     <ul class="space-y-4 pt-2 links">
       <li class="nav-link">

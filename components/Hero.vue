@@ -13,6 +13,8 @@
         <!-- I <span class="animated-text text-orange"> solve problems </span>
         and create magic. -->
       </h3>
+
+      <!-- <code> with code </code> -->
     </div>
 
     <p class="animate text-secondary max-w-2xl">

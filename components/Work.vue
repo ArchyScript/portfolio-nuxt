@@ -10,11 +10,11 @@
       projects listed here and counting 👍🏾
     </p>
 
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
       <div
         v-for="(project, index) in displayedProjects"
         :key="index"
-        class="p-0.5 sm:col-span-3 md:col-span-1 project-card"
+        class="p-0.5"
       >
         <CardsWork :project="project" />
       </div>

@@ -19,11 +19,9 @@
         target="_blank"
         rel="noopener noreferrer"
         :title="menuLink.title"
+        class="text-secondary !hover:text-green-500"
       >
-        <Icons
-          :title="menuLink.icon"
-          class="nav-icon text-xl !text-secondary"
-        />
+        <Icons :title="menuLink.icon" class="text-xl" />
       </a>
     </div>
   </nav>

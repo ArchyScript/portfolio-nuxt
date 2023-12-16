@@ -17,8 +17,8 @@
         </p>
 
         <p>
-          <a class="big-btn !mt-5" href="mailto:archyscript@gmail.com">
-            <UIButton text=" say hello " />
+          <a class="!mt-5" href="mailto:archyscript@gmail.com">
+            <UIButton text="GET IN TOUCH" />
           </a>
         </p>
       </div>
