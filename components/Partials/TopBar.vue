@@ -1,176 +1,145 @@
 <template>
   <nav
     id="header"
-    class="bg-[#211e25c6] text-black top-0 w-full px-4 py-2 z-30 select-none block md:hidden fixed shadow-xl transition-all duration-500"
+    class="bg-[#211e25c6] text-black top-0 w-full px-4 py-2 z-30 select-none block md:hidden fixed shadow-md shadow-ef fect transition-all duration-500"
   >
-    test top nav
-    <!-- <div
-      class="container flex flex-wrap items-center justify-between md:py-5 py-3 px-4 mx-auto md:flex-row max-w-7xl"
+    <div
+      class="container flex flex-wrap items-center justify-between md:py-4 py-2.5 px-4 mx-auto md:flex-row max-w-7xl"
     >
       <a href="#" class="transition-all duration-300 text-secondary z-30">
-        <logo class="h-10 w-10" />
+        <nuxt-link to="/">
+          <img
+            class="img h-10 w-10 sm:h-12 sm:w-12 rounded-full cursor-pointer"
+            src="~/assets/images/me.png"
+            alt="Headshot"
+          />
+        </nuxt-link>
       </a>
 
-      <div
-        @click="toggleMenu"
-        class="menu-btn z-30"
-        :class="{ active: showMenu }"
-      >
+      <!--  -->
+      <!-- :class="{ active: showMenu }" -->
+      <div class="z-30">
         <span
-          class="bg-secondary before:bg-secondary after:bg-secondary"
-        ></span>
+          @click="toggleMenu"
+          class="text-4xl text-secondary before:text-secondary after:text-secondary"
+        >
+          <Icons :title="showMenu ? 'close' : 'menu'" />
+        </span>
       </div>
-    </div> -->
+    </div>
   </nav>
 
-  <!-- <transition appear @enter="enter" @before-enter="beforeEnter" :css="false">
-		<div
-			v-if="showMenu"
-			class="navMenu w-full gap-4 fixed bg-primary inset-0 h-full p-4 z-20"
-		>
-			<ul class="flex flex-col items-center pt-36 h-full">
-				<li class="menu-link">
-					<a href="/#about" class="chakra" @click="close">About</a>
-				</li>
-				<li class="menu-link">
-					<a href="/#experience" class="chakra" @click="close">Experience</a>
-				</li>
-				<li class="menu-link">
-					<a href="/#works" class="chakra" @click="close">Works</a>
-				</li>
-				<li class="menu-link">
-					<a href="/#contact" class="chakra" @click="close">Contact</a>
-				</li>
-				<span class="menu-link">
-					<li class="mt-20 gap-6 items-center flex">
-						<span>
-							<a
-								href="https://github.com/kromate"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<github class="nav-icon" />
-							</a>
-						</span>
+  <transition appear @enter="enter" @before-enter="beforeEnter" :css="false">
+    <div
+      v-if="showMenu"
+      class="navMenu w-full gap-4 fixed bg-primary inset-0 h-full p-4 z-20"
+    >
+      <ul class="flex flex-col items-center pt-36 h-full">
+        <li class="menu-link">
+          <a href="/#about" class="chakra" @click="close">About</a>
+        </li>
+        <li class="menu-link">
+          <a href="/#experience" class="chakra" @click="close">Experience</a>
+        </li>
+        <li class="menu-link">
+          <a href="/#works" class="chakra" @click="close">Works</a>
+        </li>
+        <li class="menu-link">
+          <a href="/#contact" class="chakra" @click="close">Contact</a>
+        </li>
 
-						<span>
-							<a
-								href="https://twitter.com/kromate_24"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<twitter class="nav-icon" />
-							</a>
-						</span>
-						<span>
-							<a
-								href="https://www.instagram.com/kromate_24/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<instagram class="nav-icon" />
-							</a>
-						</span>
-						<span>
-							<a
-								href="https://www.youtube.com/c/Kromate_24"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<youtube class="nav-icon" />
-							</a>
-						</span>
-						<span>
-							<a
-								href="https://www.linkedin.com/in/kromate/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<linkedin class="nav-icon" />
-							</a>
-						</span>
-						<span>
-							<a
-				href="https://api.whatsapp.com/send?phone=2348146923944"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<whatsapp class="nav-icon " />
-			</a>
-						</span>
-					</li>
-				</span>
-			</ul>
-		</div>
-	</transition> -->
+        <span class="menu-link">
+          <li class="mt-20 gap-6 items-center flex">
+            <span
+              v-for="(menuLink, index) in menuLinks"
+              :key="`${menuLink.title}_${index}`"
+            >
+              <a
+                :href="menuLink.link"
+                target="_blank"
+                rel="noopener noreferrer"
+                :title="menuLink.title"
+                class="text-secondary !hover:text-orange"
+              >
+                <Icons
+                  :title="menuLink.icon"
+                  class="text-xl !hover:text-orange"
+                />
+              </a>
+              <!-- <a
+                href="https://www.linkedin.com/in/kromate/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                test 
+              </a> -->
+            </span>
+          </li>
+        </span>
+      </ul>
+    </div>
+  </transition>
 </template>
 
 <script setup lang="ts">
-  // import { ref } from '@vue/reactivity';
-  // import logo from '@/assets/icons/logo.vue';
-  // import github from '@/assets/icons/github.vue';
-  // import twitter from '@/assets/icons/twitter.vue';
-  // import youtube from '@/assets/icons/youtube.vue';
-  // import linkedin from '@/assets/icons/linkedin.vue';
-  // import instagram from '@/assets/icons/instagram.vue';
-  // import whatsapp from '@/assets/icons/whatsapp.vue';
-  // import gsap from 'gsap';
-  // import { onMounted } from 'vue';
-  // import { scrollControl, topBarScroll } from '@/composibles/controls';
+  import gsap from "gsap"
+  import { menu } from "./menu"
+  const menuLinks = ref(menu)
+  //   import { scrollControl, topBarScroll } from '@/composibles/controls';
 
   // const { enableScroll, disableScroll } = scrollControl();
 
-  // const showMenu = ref(false);
-  // const toggleMenu = () => {
-  // 	if (!showMenu.value) {
-  // 		showMenu.value = !showMenu.value;
-  // 		disableScroll();
-  // 	} else {
-  // 		close();
-  // 	}
-  // };
-  // const beforeEnter = (el: any) => {
-  // 	el.style.opacity = 0;
-  // 	el.style.transform = 'translateX(-100px)';
-  // };
-  // const enter = (el: any, done: any) => {
-  // 	gsap
-  // 		.to(el, {
-  // 			opacity: 1,
-  // 			x: 0,
-  // 			duration: 0.25,
-  // 			onComplete: done(),
-  // 		})
-  // 		.then(() => {
-  // 			gsap.fromTo(
-  // 				'li',
-  // 				{ opacity: 0, y: 10 },
-  // 				{ opacity: 1, y: 0, stagger: 0.25, ease: 'linear', duration: 0.25 }
-  // 			);
-  // 		});
-  // };
+  const showMenu = ref(false)
+  const toggleMenu = () => {
+    if (!showMenu.value) {
+      showMenu.value = !showMenu.value
+      // disableScroll();
+    } else {
+      close()
+    }
+  }
+  const beforeEnter = (el: any) => {
+    el.style.opacity = 0
+    el.style.transform = "translateX(-100px)"
+  }
+  const enter = (el: any, done: any) => {
+    gsap
+      .to(el, {
+        opacity: 1,
+        x: 0,
+        duration: 0.25,
+        onComplete: done(),
+      })
+      .then(() => {
+        gsap.fromTo(
+          "li",
+          { opacity: 0, y: 10 },
+          { opacity: 1, y: 0, stagger: 0.25, ease: "linear", duration: 0.25 }
+        )
+      })
+  }
 
-  // const close = () => {
-  // 	gsap.to('.navMenu', { opacity: 0, x: -100, duration: 0.25 }).then(() => {
-  // 		showMenu.value = false;
-  // 		enableScroll();
-  // 	});
-  // };
-  // onMounted(() => {
-  // 	// gsap.fromTo(
-  // 	// 	'nav',
-  // 	// 	{ opacity: 0, y: -20 },
-  // 	// 	{
-  // 	// 		opacity: 1,
-  // 	// 		y: 0,
-  // 	// 		// duration: 0.35,
-  // 	// 		delay: 1.65,
-  // 	// 		ease: 'linear',
-  // 	// 	}
-  // 	// );
+  const close = () => {
+    gsap.to(".navMenu", { opacity: 0, x: -100, duration: 0.25 }).then(() => {
+      showMenu.value = false
+      // enableScroll();
+    })
+  }
+  onMounted(() => {
+    gsap.fromTo(
+      "nav",
+      { opacity: 0, y: -20 },
+      {
+        opacity: 1,
+        y: 0,
+        // duration: 0.35,
+        delay: 1.65,
+        ease: "linear",
+      }
+    )
 
-  // 	topBarScroll();
-  // });
+    topBarScroll()
+  })
 </script>
 
 <style scoped lang="scss">

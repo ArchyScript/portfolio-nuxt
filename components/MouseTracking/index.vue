@@ -10,22 +10,6 @@
       }"
       :class="{ bright: isFocused }"
     ></div>
-
-    <!-- 
-        
-  .mouse-effect {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: #17ce89;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: background-color 0.3s ease;
-  }
-
-     -->
-    <!-- Your project page content here -->
   </div>
 </template>
 

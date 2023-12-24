@@ -3,7 +3,7 @@
     id="contact"
     class="text-secondary flex justify-center items-center flex-col py-16"
   >
-    <UITitle title="Contact" :hasBothEnds="true" />
+    <!-- <UITitle title="Contact" :hasBothEnds="true" /> -->
 
     <div class="flex-col center">
       <div class="text-center max-w-xl flex flex-col space-y-6 items-center">

@@ -31,9 +31,10 @@
     <SiSublimetext v-if="title === 'sublime'" />
     <DeMaterialuiOriginal v-if="title === 'materialui'" />
     <AkEdit v-if="title === 'edit'" />
+    <ClMenuAlt01 v-if="title === 'menu'" />
+    <IoOutlineClose v-if="title === 'close'" />
     <!-- <IconsPinia v-if="title === 'pinia'" /> -->
     <!-- 
-    <AkNextjsFill v-if="title === 'next'" />
     <AkNextjsFill v-if="title === 'next'" />
      
     -->
@@ -77,8 +78,9 @@
     SiSublimetext,
     DeMaterialuiOriginal,
     AkEdit,
+    ClMenuAlt01,
+    IoOutlineClose,
   } from "@kalimahapps/vue-icons"
-
   const props = defineProps({
     title: {
       type: String,

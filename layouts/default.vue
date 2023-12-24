@@ -1,14 +1,13 @@
 <template>
   <div
-    class="container max-w-[1200px] mx-auto flex justify-center items-center flex-col w-full ove rflow-scroll"
+    class="container max-w-[1200px] mx-auto flex justify-center items-center flex-col w-full"
     ref="body"
   >
     <PartialsTopBar />
     <PartialsLeftSideBar />
     <PartialsRightSideBar />
 
-    <div class="w-full h-full px-4 sm:px-6 md:px-10 lg:px-16">
-      <!-- <MouseTracking /> -->
+    <div class="w-full h-full px- 4 sm:px- 6 md:px- 10 lg:px- 16">
       <slot />
     </div>
   </div>

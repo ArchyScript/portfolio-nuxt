@@ -6,7 +6,7 @@
     <nuxt-link to="/" class="mb-10">
       <img
         class="img h-10 w-10 rounded-full cursor-pointer"
-        src="me.png"
+        src="~/assets/images/me.png"
         alt="Headshot"
       />
     </nuxt-link>
@@ -19,7 +19,7 @@
         target="_blank"
         rel="noopener noreferrer"
         :title="menuLink.title"
-        class="text-secondary !hover:text-green-500"
+        class="text-secondary !hover:text-orange"
       >
         <Icons :title="menuLink.icon" class="text-xl" />
       </a>

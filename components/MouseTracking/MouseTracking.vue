@@ -20,7 +20,7 @@
     ></div>
   </div>
 </template>
-
+ 
 <script setup>
   const mouseX = ref(0)
   const mouseY = ref(0)
