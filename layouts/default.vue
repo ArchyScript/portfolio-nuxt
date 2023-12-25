@@ -7,7 +7,9 @@
     <PartialsLeftSideBar />
     <PartialsRightSideBar />
 
-    <div class="w-full h-full px- 4 sm:px- 6 md:px- 10 lg:px- 16">
+    <div
+      class="w-full h-full px-5 sm:px-8 md:px-20 lg:px-24 xl:px-6 py-4 md:py-0"
+    >
       <slot />
     </div>
   </div>
@@ -19,26 +21,4 @@
   .layout-line {
     animation: grow 0.65s 1.5s 1 forwards;
   }
-
-  /*
-  @keyframes grow {
-    from {
-      opacity: 0;
-      height: 0;
-    }
-    to {
-      opacity: 1;
-      height: 100%;
-    }
-  }
-
-  @keyframes show {
-    from {
-      z-index: 0;
-    }
-    to {
-      z-index: 3;
-    }
-  }
-  */
 </style>

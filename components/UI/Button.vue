@@ -44,7 +44,7 @@
 
 <style scoped lang="scss">
   .big-btn {
-    @apply text-orange border border-orange py-3 px-10 rounded cursor-pointer relative text-base;
+    @apply text-orange border border-orange  py-2.5 px-8  sm:py-3 sm:px-10  rounded cursor-pointer relative text-sm sm:text-base;
 
     &:focus,
     &:active {

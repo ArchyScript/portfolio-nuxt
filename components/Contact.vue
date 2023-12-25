@@ -3,15 +3,17 @@
     id="contact"
     class="text-secondary flex justify-center items-center flex-col py-16"
   >
-    <!-- <UITitle title="Contact" :hasBothEnds="true" /> -->
-
     <div class="flex-col center">
-      <div class="text-center max-w-xl flex flex-col space-y-6 items-center">
-        <p class="text-xl">That's all folks</p>
+      <div
+        class="text-center max-w-xl flex flex-col space-y-4 sm:space-y-6 items-center"
+      >
+        <p class="text-lg sm:text-xl">That's all folks</p>
 
-        <p class="text-4xl md:text-6xl font-bold text-orange">Get in Touch</p>
+        <p class="text-3xl sm:text-4xl md:text-6xl font-bold text-orange">
+          Get in Touch
+        </p>
 
-        <p class="text-xl">
+        <p class="text-lg sm:text-xl">
           If you would love to work with me, collaborate on a project or just
           say "Hello"
         </p>

@@ -3,21 +3,29 @@
     id="hero"
     class="flex flex-col space-y-4 items-start !text-secondary justify-center pb-16"
   >
-    <div class="sm:leading-[5rem] leading-[3rem]">
-      <h5 class="animate text-xl text-orange font-Chakra">Hi , my name is</h5>
+    <div class=" ">
+      <h5
+        class="animate text-base sm:text-lg text-xl text-orange mb-1.5 sm:mb-2"
+      >
+        Hi , my name is
+      </h5>
 
-      <h2 class="animate text-large text-white">Dasaolu Daniel.</h2>
+      <h2
+        class="animate text-large font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-[120%]"
+      >
+        Dasaolu Daniel.
+      </h2>
 
-      <h3 class="animate text-large text-secondary">
+      <h3
+        class="animate text-large text-secondary font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%]"
+      >
         I address problems and create magic
-        <!-- I <span class="animated-text text-orange"> solve problems </span>
-        and create magic. -->
       </h3>
 
       <!-- <code> with code </code> -->
     </div>
 
-    <p class="animate text-secondary max-w-2xl">
+    <p class="animate text-secondary text-base md:text-lg xl:text-xl max-w-2xl">
       Experienced Frontend Developer specializing in MEVN/MERN stacks, committed
       to delivering high-performance, accessible, and responsive applications.
       Thrives on collaborating with like-minded developers to create captivating
@@ -35,6 +43,8 @@
         crafting enchantment with code.
       </h3> 
       
+         <p> I <span class="animated-text text-orange"> solve problems </span>
+        and create magic.  </p>
       
       <p> I tackle problems and create magic.
 I handle problems and create magic.

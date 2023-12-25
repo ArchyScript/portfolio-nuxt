@@ -10,7 +10,7 @@
       projects listed here and counting 👍🏾
     </p>
 
-    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-y-4 md:gap-4">
       <div
         v-for="(project, index) in displayedProjects"
         :key="index"

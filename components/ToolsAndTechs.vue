@@ -5,15 +5,17 @@
     <UITabs :tabs="librariesAndFrameworks" @select="handleSelectActiveTab" />
 
     <div>
-      <div class="flex flex-wrap gap-6 justify-center w-full flex-wrap">
+      <div
+        class="flex flex-wrap gap-2 sm:gap-3 md:gap-4 lg:gap-6 justify-center w-full flex-wrap"
+      >
         <div
           v-for="(tech, index) in computedTechAndTools"
           :key="index"
-          class="flex justify-center items-center flex-col space-y-1.5 rounded-md p-3 w-24 h-24 border border-secondary border-opacity-50"
+          class="flex justify-center items-center flex-col space-y-1.5 rounded-md p-1.5 sm:p-2 md:p-3 w-20 h-20 md:w-24 md:h-24 border border-secondary border-opacity-50"
         >
-          <Icons :title="tech.icon" class="text-4xl" />
+          <Icons :title="tech.icon" class="text-2xl sm:text-3xl md:text-4xl" />
 
-          <p class="text-sm text-secondary">
+          <p class="text-xs sm:text-sm text-secondary">
             {{ tech.title }}
           </p>
         </div>

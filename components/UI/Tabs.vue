@@ -1,6 +1,6 @@
 <template>
   <div
-    className="flex items-baseline justify-center flex-wrap  space-x-1 sm:space-x-2 lg:space-x-3 space-y-1  sm:space-y-2"
+    className="flex items-baseline justify-center flex-wrap    space-x-1 sm:space-x-2 lg:space-x-3 space-y-1  sm:space-y-2"
   >
     <span
       v-for="(tab, index) in tabs"

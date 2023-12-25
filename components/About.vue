@@ -3,10 +3,7 @@
     <UITitle title="About Me" />
 
     <div
-      class="flex justify-between space-x-10 text-secondary"
-      data-aos="fade-in"
-      data-aos-duration="3500"
-      data-aos-easing="linear"
+      class="flex flex-col-reverse md:flex-row justify-between gap-y-8 md:gap-y-0 md:space-x-10 text-secondary"
     >
       <div class="flex-1 lg:flex-3 my-auto">
         <div class="flex justify-between flex-col space-y-4">
@@ -31,7 +28,7 @@
         </div>
       </div>
 
-      <div class="w-full h-full flex-1 lg:flex-2">
+      <div class="w-full h-full flex-1 lg:flex-2 sm:p-6">
         <img
           class="img w-full h-full rounded-md bg-cover"
           src="~/assets/images/me.png"

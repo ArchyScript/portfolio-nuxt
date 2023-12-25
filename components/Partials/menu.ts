@@ -3,6 +3,33 @@ export type MenuTypes = {
   link: string
   icon: string
 }
+export type NavLinkTypes = {
+  title: string
+  href: string
+}
+
+export const nav: NavLinkTypes[] = [
+  {
+    title: "About",
+    href: "#about",
+  },
+  {
+    title: "Tools",
+    href: "#tools",
+  },
+  {
+    title: "Experience",
+    href: "#experience",
+  },
+  {
+    title: "Works",
+    href: "#works",
+  },
+  {
+    title: "Contact",
+    href: "#contact",
+  },
+]
 
 export const menu: MenuTypes[] = [
   {

@@ -144,6 +144,12 @@ export const toolsAndFrameworks = [
     category: "tools",
   },
   {
+    icon: "vercel",
+    title: "Vercel",
+    rating: 4,
+    category: "tools",
+  },
+  {
     icon: "next",
     title: "Next JS",
     rating: 2,

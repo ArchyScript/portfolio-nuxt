@@ -1,9 +1,9 @@
 <template>
   <nav
     aria-label="social links"
-    class="fixed h-full z-50 overflow-auto border-secondary hidden md:flex min-w-[60px] items-center py-5 top-0 border-r md:left-0 left-5 flex-col"
+    class="fixed h-full z-50 overflow-auto space-y-12 border-secondary hidden md:flex min-w-[60px] justify-between items-center py-5 top-0 border-r md:left-0 left-5 flex-col"
   >
-    <nuxt-link to="/" class="mb-10">
+    <nuxt-link to="/">
       <img
         class="img h-10 w-10 rounded-full cursor-pointer"
         src="~/assets/images/me.png"
@@ -11,7 +11,7 @@
       />
     </nuxt-link>
 
-    <div class="mt-auto space-y-8 flex-col flex pb-4">
+    <div class="mt-auto space-y-8 flex-col flex pb-2">
       <a
         v-for="(menuLink, index) in menuLinks"
         :key="`${menuLink.title}_${index}`"
@@ -21,7 +21,7 @@
         :title="menuLink.title"
         class="text-secondary !hover:text-orange"
       >
-        <Icons :title="menuLink.icon" class="text-xl" />
+        <Icons :title="menuLink.icon" class="text-lg" />
       </a>
     </div>
   </nav>

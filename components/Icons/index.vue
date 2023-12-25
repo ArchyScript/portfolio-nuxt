@@ -33,8 +33,10 @@
     <AkEdit v-if="title === 'edit'" />
     <ClMenuAlt01 v-if="title === 'menu'" />
     <IoOutlineClose v-if="title === 'close'" />
+    <SiVercel v-if="title === 'vercel'" />
     <!-- <IconsPinia v-if="title === 'pinia'" /> -->
     <!-- 
+    <AkNextjsFill v-if="title === 'next'" />
     <AkNextjsFill v-if="title === 'next'" />
      
     -->
@@ -80,6 +82,7 @@
     AkEdit,
     ClMenuAlt01,
     IoOutlineClose,
+    SiVercel,
   } from "@kalimahapps/vue-icons"
   const props = defineProps({
     title: {
