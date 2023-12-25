@@ -16,12 +16,22 @@
         Dasaolu Daniel.
       </h2>
 
+      <!-- <h3
+        class="animate text-large text-secondary font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%]"
+      >
+        I solve problems and create magic
+      </h3> -->
+      <!-- <h3
+        class="animate text-large text-secondary font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%]"
+      >
+        I create magic with code
+      </h3> -->
+
       <h3
         class="animate text-large text-secondary font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%]"
       >
-        I address problems and create magic
+        I solve problems; my codes do the magic
       </h3>
-
       <!-- <code> with code </code> -->
     </div>
 
@@ -34,7 +44,7 @@
     </p>
 
     <div class="flex space-x-6">
-      <UIButton text="Resume " />
+      <UIButton text="Résumé" />
     </div>
 
     <!-- <h3 class="animate text-large text-secondary">
