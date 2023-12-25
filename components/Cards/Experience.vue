@@ -26,7 +26,7 @@
           ></p>
           <p
             class="hidden md:block text-sm md:text-base desc"
-            v-html="experience.description.sm"
+            v-html="experience.description.lg"
           ></p>
         </div>
 
