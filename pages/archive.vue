@@ -5,7 +5,7 @@
   >
     <header>
       <h1 class="font-bold text-6xl text-white mt-12">Archive</h1>
-      <p class="text-orange mt-2 tracking-wide">
+      <p class="text-main mt-2 tracking-wide">
         A big list of things I’ve worked on
       </p>
     </header>
@@ -32,7 +32,7 @@
             <td class="tech hide-on-mobile">vue . nuxt . tailwind</td>
 
             <td class="links">
-              <!-- <redirect class="text-sm text-secondary" /> -->
+              <!-- <redirect class="text-sm text-gray" /> -->
             </td>
           </tr>
         </tbody>
@@ -115,7 +115,7 @@
 		td {
 			&.year {
 				padding-right: 20px;
-				color: var(--orange);
+				color: var(--main);
 				@media (max-width: 768px) {
 					padding-right: 10px;
 					font-size: var(--fz-sm);

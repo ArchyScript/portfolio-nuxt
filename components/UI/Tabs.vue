@@ -40,10 +40,10 @@
 
 <style scoped>
   .active {
-    @apply text-black bg-secondary border-secondary font-bold;
+    @apply text-black bg-gray border-gray font-bold;
   }
 
   .inactive {
-    @apply text-white border-secondary bg-[#2f293ae8] bg-opacity-50;
+    @apply text-white border-gray bg-[#2f293ae8] bg-opacity-50;
   }
 </style>

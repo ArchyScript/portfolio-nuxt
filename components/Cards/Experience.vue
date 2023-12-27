@@ -4,7 +4,6 @@
   >
     <div class="card-circle">
       {{ index < 9 ? `0${+index + 1}` : +index + 1 }}
-      <!-- {{ index <= 9 ? `0${index}` : index }} -->
     </div>
 
     <div class="card" data-aos-duration="500">
@@ -13,7 +12,7 @@
           <h3 class="text-white opacity-90 font-medium md:text-xl">
             {{ experience.name }}
           </h3>
-          <p class="text-xs sm:text-sm text-orange font-thin">
+          <p class="text-xs sm:text-sm text-main font-thin">
             {{ experience.role }}
           </p>
         </div>
@@ -69,10 +68,10 @@
 
 <style scoped>
   .card {
-    @apply w-full rounded-md bg-badge border border-secondary flex flex-col items-center justify-between md:flex-row  p-4     md:p-8 text-secondary;
+    @apply w-full rounded-md bg-semi-dark border border-gray flex flex-col items-center justify-between md:flex-row p-4 md:p-8 text-gray;
   }
 
   .card-circle {
-    @apply text-white text-xs sm:text-sm  md:text-xl font-bold border border-secondary flex items-center justify-center rounded-full bg-badge flex-shrink-0   h-8  w-8 md:h-16 md:w-16;
+    @apply text-main text-xs sm:text-sm  md:text-xl font-bold border border-gray flex items-center justify-center rounded-full bg-semi-dark flex-shrink-0 h-8 w-8 md:h-16 md:w-16;
   }
 </style>

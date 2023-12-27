@@ -3,12 +3,12 @@
     <UITitle title="About Me" />
 
     <div
-      class="flex flex-col-reverse md:flex-row justify-between gap-y-8 md:gap-y-0 md:space-x-10 text-secondary"
+      class="flex flex-col-reverse md:flex-row justify-between gap-y-8 md:gap-y-0 md:space-x-10 text-gray"
     >
       <div class="flex-1 lg:flex-3 my-auto">
         <div class="flex justify-between flex-col space-y-4">
           <p class="description leading-7">
-            Hello! 👋🏾 I am <span class="text-orange"> Daniel Dasaolu </span>
+            Hello! 👋🏾 I am <span class="text-main"> Daniel Dasaolu </span>
             , an enthusiastic frontend Developer with a strong foundation in web
             development. I excel in designing exceptional digital experiences
             and applying cutting-edge technologies for innovative solutions.
@@ -63,7 +63,7 @@
 
 <style scoped lang="scss">
   #about {
-    color: var(--secondary);
+    color: var(--gray);
     .inner {
       display: grid;
       grid-template-columns: 3fr 2fr;

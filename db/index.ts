@@ -24,7 +24,7 @@ export const experiences = [
     description: {
       sm: `Started web development in February 2020 with HTML/CSS, transitioned to JavaScript in April 2020, and chose Vue.js as my primary frontend framework.`,
       lg: `I embarked on my exploration into the technology and programming space in February 2020, focusing on web development with HTML/CSS. Transitioned to JavaScript in April 2020, built projects, and ultimately chose 
-      <a href="https://vuejs.org/" target="_blank" class="text-orange hover:opacity-80"> Vue.js  </a>
+      <a href="https://vuejs.org/" target="_blank" class="text-main hover:opacity-80"> Vue.js  </a>
      as my primary and preferred frontend framework.`,
     },
   },
@@ -35,10 +35,10 @@ export const experiences = [
     workArrangement: "Onsite",
     duration: "January 2020 — Present",
     description: {
-      sm: `Pursuing a B.Sc in Architecture at <a href="https://oauife.edu.ng/" target="_blank" class="text-orange hover:opacity-80"> OAU  </a>,
+      sm: `Pursuing a B.Sc in Architecture at <a href="https://oauife.edu.ng/" target="_blank" class="text-main hover:opacity-80"> OAU  </a>,
        combining architectural principles with technology. As an architect-in-training, I focus on innovative and user-centric frontend designs.`,
       lg: `Pursuing a B.Sc in Architecture at
-      <a href="https://oauife.edu.ng/" target="_blank" class="text-orange hover:opacity-80 inline-flex"> OAU  </a>,
+      <a href="https://oauife.edu.ng/" target="_blank" class="text-main hover:opacity-80 inline-flex"> OAU  </a>,
      blending architectural principles with technology. As an architect-in-training, I refine problem-solving skills, infusing innovation and user-centricity into frontend designs. My educational journey fosters a unique perspective for a holistic approach to work.`,
     },
   },

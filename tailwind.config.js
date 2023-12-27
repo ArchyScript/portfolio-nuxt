@@ -11,12 +11,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: 'var(--primary)',
-        secondary: 'var(--secondary)',
-        orange: 'var(--orange)',
-        white: 'var(--white)',
-        badge: 'var(--badge)',
-        light_orange: 'var(--light_orange)',
+        main: 'var(--main)',
+        "main-deep": 'var(--main-deep)',
+        light: 'var(--light)',
+        dark: 'var(--dark)',
+        "semi-dark": 'var(--semi-dark)',
+        gray: 'var(--gray)',
       },
       fontFamily: {
         Chakra: ['Chakra Petch', 'sans-serif'],

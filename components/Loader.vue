@@ -1,6 +1,6 @@
 <template>
   <div class="fixed inset-0 h-screen w-screen z-50" v-if="show">
-    <div class="center h-screen w-screen bg-primary logo-container !bg-black">
+    <div class="center h-screen w-screen bg-dark logo-container !bg-black">
       <div class="relative center text-white pos text-7xl">
         test
         <!-- <img src="../assets/images/border.svg" alt="border" class="logo-border absolute w-40 rotate-45" />

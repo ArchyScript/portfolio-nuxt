@@ -4,7 +4,7 @@
 
     <p class="mb-6">
       There are about
-      <span class="text-orange text-xl font-bold">
+      <span class="text-main text-xl font-bold">
         {{ projects.length }}
       </span>
       projects listed here and counting 👍🏾

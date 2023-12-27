@@ -4,7 +4,7 @@
 
     <div class="relative -ml-3 sm:ml-0">
       <div
-        class="absolute z-0 border-r border-orange ml-4 md:ml-8 top-14 bottom-14"
+        class="absolute z-0 border-r border-main ml-4 md:ml-8 top-14 bottom-14"
       ></div>
 
       <div class="relative z-10 flex flex-col space-y-4">

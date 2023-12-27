@@ -1,12 +1,10 @@
 <template>
   <section
     id="hero"
-    class="flex flex-col space-y-4 items-start !text-secondary justify-center pb-16"
+    class="flex flex-col space-y-4 items-start !text-gray justify-center pb-16"
   >
     <div class=" ">
-      <h5
-        class="animate text-base sm:text-lg text-xl text-orange mb-1.5 sm:mb-2"
-      >
+      <h5 class="animate text-base sm:text-lg text-xl text-main mb-1.5 sm:mb-2">
         Hi , my name is
       </h5>
 
@@ -17,25 +15,25 @@
       </h2>
 
       <!-- <h3
-        class="animate text-large text-secondary font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%]"
+        class="animate text-large text-gray font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%]"
       >
         I solve problems and create magic
       </h3> -->
       <!-- <h3
-        class="animate text-large text-secondary font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%]"
+        class="animate text-large text-gray font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%]"
       >
         I create magic with code
       </h3> -->
 
       <h3
-        class="animate text-large text-secondary font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%]"
+        class="animate text-large text-gray font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%]"
       >
         I solve problems; my codes do the magic
       </h3>
       <!-- <code> with code </code> -->
     </div>
 
-    <p class="animate text-secondary text-base md:text-lg xl:text-xl max-w-2xl">
+    <p class="animate text-gray text-base md:text-lg xl:text-xl max-w-2xl">
       Experienced Frontend Developer specializing in MEVN/MERN stacks, committed
       to delivering high-performance, accessible, and responsive applications.
       Thrives on collaborating with like-minded developers to create captivating
@@ -47,13 +45,13 @@
       <UIButton text="Résumé" />
     </div>
 
-    <!-- <h3 class="animate text-large text-secondary">
+    <!-- <h3 class="animate text-large text-gray">
         I
-        <span class="animated-text text-orange"> {{ currentAction }}, </span>
+        <span class="animated-text text-main"> {{ currentAction }}, </span>
         crafting enchantment with code.
       </h3> 
       
-         <p> I <span class="animated-text text-orange"> solve problems </span>
+         <p> I <span class="animated-text text-main"> solve problems </span>
         and create magic.  </p>
       
       <p> I tackle problems and create magic.

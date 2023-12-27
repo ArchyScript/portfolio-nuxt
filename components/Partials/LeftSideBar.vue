@@ -1,7 +1,7 @@
 <template>
   <nav
     aria-label="social links"
-    class="fixed h-full z-50 overflow-auto space-y-12 border-secondary hidden md:flex min-w-[60px] justify-between items-center py-5 top-0 border-r md:left-0 left-5 flex-col"
+    class="fixed h-full z-50 overflow-auto space-y-12 border-gray hidden md:flex min-w-[60px] justify-between items-center py-5 top-0 border-r md:left-0 left-5 flex-col"
   >
     <nuxt-link to="/">
       <img
@@ -19,7 +19,7 @@
         target="_blank"
         rel="noopener noreferrer"
         :title="menuLink.title"
-        class="text-secondary !hover:text-orange"
+        class="text-gray !hover:text-main"
       >
         <Icons :title="menuLink.icon" class="text-lg" />
       </a>

@@ -30,8 +30,8 @@ export const scrollpsy = () => {
         document.documentElement.scrollTop || document.body.scrollTop
       if (currentElementOffset <= scrollPosition + linksHeight) {
         allLinks.forEach((currentLink) => {
-          if (currentLink.classList.contains("!text-orange")) {
-            currentLink.classList.remove("!text-orange")
+          if (currentLink.classList.contains("!text-main")) {
+            currentLink.classList.remove("!text-main")
           }
         })
         const currentID = current.getAttribute("id")
@@ -39,7 +39,7 @@ export const scrollpsy = () => {
           const currentLink = document?.querySelector(
             `a[href="/#${currentID}"]`
           )
-          currentLink?.classList.add("!text-orange")
+          currentLink?.classList.add("!text-main")
         }
       }
     })

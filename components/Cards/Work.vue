@@ -1,10 +1,10 @@
 <template>
   <div
-    class="shadow-md flex justify-between flex-col relative h-full p-4 sm:p-6 md:p-8 overflow-auto bg-badge rounded-md hover:-translate-y-0.5 hover:scale-105 hover:cursor-zoom-in trans"
+    class="shadow-md flex justify-between flex-col relative h-full p-4 sm:p-6 md:p-8 overflow-auto bg-semi-dark rounded-md hover:-translate-y-0.5 hover:scale-105 hover:cursor-zoom-in trans"
   >
     <div>
       <div class="flex items-center justify-between w-full">
-        <span class="text-3xl sm:text-4xl text-orange">
+        <span class="text-3xl sm:text-4xl text-main">
           <Icons title="folder" />
         </span>
 
@@ -12,7 +12,7 @@
           <a
             v-for="(link, index) in project.links"
             :key="index"
-            class="text-xl sm:text-2xl text-secondary hover:text-orange transition-all duration-300 cursor-pointer"
+            class="text-xl sm:text-2xl text-gray hover:text-main transition-all duration-300 cursor-pointer"
             target="_blank"
             :href="link.url"
             :title="link.title"
@@ -27,11 +27,11 @@
           {{ project.name }}
         </h2>
 
-        <p class="text-orange text-xs mb-2 items-stretch">
+        <p class="text-main text-xs mb-2 items-stretch">
           {{ project.role }}
         </p>
 
-        <p class="text-secondary items-stretch">
+        <p class="text-gray items-stretch">
           {{ project.description }}
         </p>
       </header>
@@ -41,7 +41,7 @@
       <span
         v-for="tag in project.tags"
         :key="tag"
-        class="rounded-md text-[10px] sm:text-xs leading-5 px-2.5 sm:px-3 font-normal text-white bg-opacity-90 bg-[#2f293ae8] text-center border border-secondary !py-1"
+        class="rounded-md text-[10px] sm:text-xs leading-5 px-2.5 sm:px-3 font-normal text-white bg-opacity-90 bg-[#2f293ae8] text-center border border-gray !py-1"
       >
         {{ tag }}
       </span>

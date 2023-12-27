@@ -11,11 +11,11 @@
         <div
           v-for="(tech, index) in computedTechAndTools"
           :key="index"
-          class="flex justify-center items-center flex-col space-y-1.5 rounded-md p-1.5 sm:p-2 md:p-3 w-20 h-20 md:w-24 md:h-24 border border-secondary border-opacity-50"
+          class="flex justify-center items-center flex-col space-y-1.5 rounded-md p-1.5 sm:p-2 md:p-3 w-20 h-20 md:w-24 md:h-24 border border-gray border-opacity-50"
         >
           <Icons :title="tech.icon" class="text-2xl sm:text-3xl md:text-4xl" />
 
-          <p class="text-xs sm:text-sm text-secondary">
+          <p class="text-xs sm:text-sm text-gray">
             {{ tech.title }}
           </p>
         </div>
@@ -61,7 +61,7 @@
 
 <style scoped lang="scss">
   #about {
-    color: var(--secondary);
+    color: var(--gray);
     .inner {
       display: grid;
       grid-template-columns: 3fr 2fr;

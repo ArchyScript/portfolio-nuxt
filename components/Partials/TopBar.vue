@@ -8,7 +8,7 @@
       <div
         class="container flex flex-wrap items-center justify-between py-1 px-2.5 sm:px-4 mx-auto md:flex-row max-w-7xl"
       >
-        <a href="#" class="transition-all duration-300 text-secondary z-30">
+        <a href="#" class="transition-all duration-300 text-gray z-30">
           <nuxt-link to="/">
             <img
               class="img h-9 w-9 sm:h-10 sm:w-10 rounded-full cursor-pointer"
@@ -21,7 +21,7 @@
         <div class="z-30">
           <span
             @click="toggleMenu"
-            class="text-3xl sm:text-4xl text-secondary before:text-secondary after:text-secondary"
+            class="text-3xl sm:text-4xl text-gray before:text-gray after:text-gray"
           >
             <Icons :title="showMenu ? 'close' : 'menu'" />
           </span>
@@ -32,7 +32,7 @@
     <transition appear @enter="enter" @before-enter="beforeEnter" :css="false">
       <div
         v-if="showMenu"
-        class="navMenu w-full space-y-20 fixed bg-primary inset-0 h-full px-4 py-20 z-20 overflow-auto"
+        class="navMenu w-full space-y-20 fixed bg-dark inset-0 h-full px-4 py-20 z-20 overflow-auto"
       >
         <div class="flex flex-col items-center space-y-4 pt-6">
           <span
@@ -43,7 +43,7 @@
             <a
               :href="navLink.href"
               rel="noopener noreferrer"
-              class="text-secondary !hover:text-orange text-xl font-bold"
+              class="text-gray !hover:text-main text-xl font-bold"
             >
               {{ navLink.title }}
             </a>
@@ -62,11 +62,11 @@
               target="_blank"
               rel="noopener noreferrer"
               :title="menuLink.title"
-              class="text-secondary !hover:text-orange"
+              class="text-gray !hover:text-main"
             >
               <Icons
                 :title="menuLink.icon"
-                class="text-lg sm:text-xl !hover:text-orange"
+                class="text-lg sm:text-xl !hover:text-main"
               />
             </a>
           </span>

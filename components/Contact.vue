@@ -1,7 +1,7 @@
 <template>
   <section
     id="contact"
-    class="text-secondary flex justify-center items-center flex-col py-16"
+    class="text-gray flex justify-center items-center flex-col py-16"
   >
     <div class="flex-col center">
       <div
@@ -9,7 +9,7 @@
       >
         <p class="text-lg sm:text-xl">That's all folks</p>
 
-        <p class="text-3xl sm:text-4xl md:text-6xl font-bold text-orange">
+        <p class="text-3xl sm:text-4xl md:text-6xl font-bold text-main">
           Get in Touch
         </p>
 
@@ -43,7 +43,7 @@
     0% {
       transform: translateX(100%) translateY(0);
       opacity: 0;
-      color: var(--orange);
+      color: var(--main);
     }
     10%,
     90% {
@@ -65,12 +65,12 @@
     }
     50% {
       transform: translateX(0);
-      color: var(--badge);
+      color: var(--semi-dark);
     }
     100% {
       transform: translateX(-100%);
       opacity: 0;
-      color: var(--orange);
+      color: var(--main);
     }
   }
 

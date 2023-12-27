@@ -24,7 +24,7 @@
     <AkInstagramFill v-if="title === 'instagram'" />
     <FeTwitter v-if="title === 'twitter'" />
     <AkLinkedinV2Fill v-if="title === 'linkedin'" />
-    <BsFolder v-if="title === 'folder'" />
+    <AnFilledFolderOpen v-if="title === 'folder'" />
     <AkNextjsFill v-if="title === 'next'" />
     <VsFileTypeLightNetlify v-if="title === 'netlify'" />
     <DeBootstrapPlain v-if="title === 'bootstrap'" />
@@ -73,7 +73,7 @@
     ChGitlab,
     AkLinkedinV2Fill,
     FeTwitter,
-    BsFolder,
+    AnFilledFolderOpen,
     AkNextjsFill,
     VsFileTypeLightNetlify,
     DeBootstrapPlain,

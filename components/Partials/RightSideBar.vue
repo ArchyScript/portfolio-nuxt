@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed overflow-auto h-full z-50 border-l border-secondary hidden md:flex min-w-[60px] justify-between items-center py-6 top-0 md:right-0 right-5 !text-secondary flex-col space-y-12"
+    class="fixed overflow-auto h-full z-50 border-l border-gray hidden md:flex min-w-[60px] justify-between items-center py-6 top-0 md:right-0 right-5 !text-gray flex-col space-y-12"
   >
     <div class="space-y-8 pt-4">
       <span class="nav-link">
@@ -53,7 +53,7 @@
 
 <style scoped>
   .nav-link {
-    @apply transition-all duration-300 cursor-pointer   hover:text-orange text-sm;
+    @apply transition-all duration-300 cursor-pointer   hover:text-main text-sm;
   }
   .nav-link:hover {
     transform: scale(1.1) !important;
