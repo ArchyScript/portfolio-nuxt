@@ -32,6 +32,6 @@
 
 <style scoped lang="scss">
   .title__text {
-    @apply text-main border border-main py-2.5 px-8  sm:py-3 sm:px-10 rounded  relative text-base md:text-lg;
+    @apply text-main font-semibold md:font-bold border border-main py-2.5 px-8  sm:py-3 sm:px-10 rounded  relative text-base md:text-lg;
   }
 </style>

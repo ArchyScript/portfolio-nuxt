@@ -8,7 +8,10 @@
       <div class="flex-1 lg:flex-3 my-auto">
         <div class="flex justify-between flex-col space-y-4">
           <p class="description leading-7">
-            Hello! 👋🏾 I am <span class="text-main"> Daniel Dasaolu </span>
+            Hello! 👋🏾 I am
+            <span class="text-main font-semibold md:font-bold">
+              Daniel Dasaolu
+            </span>
             , an enthusiastic frontend Developer with a strong foundation in web
             development. I excel in designing exceptional digital experiences
             and applying cutting-edge technologies for innovative solutions.

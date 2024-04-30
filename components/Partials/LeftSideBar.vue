@@ -5,8 +5,8 @@
   >
     <nuxt-link to="/">
       <img
-        class="img h-10 w-10 rounded-full cursor-pointer"
-        src="~/assets/images/me.png"
+        class="img h-10 w-10 xl:h-12 xl:w-12 cursor-pointer"
+        src="~/assets/images/logo.svg"
         alt="Headshot"
       />
     </nuxt-link>
@@ -19,8 +19,9 @@
         target="_blank"
         rel="noopener noreferrer"
         :title="menuLink.title"
-        class="text-gray !hover:text-main"
+        class="text-gray"
       >
+        <!-- hover:text-[#0060AA] -->
         <Icons :title="menuLink.icon" class="text-lg" />
       </a>
     </div>

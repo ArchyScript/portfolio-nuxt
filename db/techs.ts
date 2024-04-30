@@ -24,16 +24,16 @@ export const librariesAndFrameworks = [
 
 export const toolsAndFrameworks = [
   {
-    icon: "html",
-    title: "HTML",
+    icon: "vue",
+    title: "Vue JS",
     rating: 5,
-    category: "languages",
+    category: "frameworks",
   },
   {
-    icon: "css",
-    title: "CSS",
+    icon: "nuxt",
+    title: "Nuxt JS",
     rating: 5,
-    category: "languages",
+    category: "frameworks",
   },
   {
     icon: "js",
@@ -46,18 +46,6 @@ export const toolsAndFrameworks = [
     title: "Typescript",
     rating: 5,
     category: "languages",
-  },
-  {
-    icon: "vue",
-    title: "Vue JS",
-    rating: 5,
-    category: "frameworks",
-  },
-  {
-    icon: "nuxt",
-    title: "Nuxt JS",
-    rating: 5,
-    category: "frameworks",
   },
   {
     icon: "react",
@@ -82,6 +70,18 @@ export const toolsAndFrameworks = [
     title: "Bootstrap",
     rating: 5,
     category: "frameworks",
+  },
+  {
+    icon: "html",
+    title: "HTML",
+    rating: 5,
+    category: "languages",
+  },
+  {
+    icon: "css",
+    title: "CSS",
+    rating: 5,
+    category: "languages",
   },
   // {
   //   icon: "pinia",

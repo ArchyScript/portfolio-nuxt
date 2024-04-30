@@ -11,8 +11,8 @@
         <a href="#" class="transition-all duration-300 text-gray z-30">
           <nuxt-link to="/">
             <img
-              class="img h-9 w-9 sm:h-10 sm:w-10 rounded-full cursor-pointer"
-              src="~/assets/images/me.png"
+              class="h-10 w-10 sm:h-12 sm:w-12 cursor-pointer"
+              src="~/assets/images/logo.svg"
               alt="Headshot"
             />
           </nuxt-link>

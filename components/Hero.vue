@@ -3,8 +3,10 @@
     id="hero"
     class="flex flex-col space-y-4 items-start !text-gray justify-center pb-16"
   >
-    <div class=" ">
-      <h5 class="animate text-base sm:text-lg text-xl text-main mb-1.5 sm:mb-2">
+    <div>
+      <h5
+        class="animate text-base font-semibold md:font-bold sm:text-lg text-xl text-main mb-1.5 sm:mb-2"
+      >
         Hi , my name is
       </h5>
 

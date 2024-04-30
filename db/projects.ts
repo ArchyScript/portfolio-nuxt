@@ -15,6 +15,27 @@ interface ProjectInterface {
 
 export const projects: Array<ProjectInterface> = [
   {
+    name: "Transfer XO",
+    role: "Frontend Developer",
+    description: `TransferXO simplifies international money transfers with a user-friendly platform, offering competitive rates and low fees for individuals and businesses. Secure and efficient, it enables hassle-free transactions from anywhere, ensuring safety and convenience.`,
+    tags: ["Nuxt", "Typescript", "Tailwind", "antdv", "Pinia"],
+    links: [
+      // {
+      //   title: "Github",
+      //   url: "",
+      //   icon: "github",
+      // },
+      {
+        title: "Live URL",
+        url: "https://transferxo.com/",
+        icon: "edit",
+      },
+    ],
+    isClient: true,
+    isLive: true,
+    show: true,
+  },
+  {
     name: "Architecture Hub",
     role: "Fullstack developer",
     description: `Aims to connect architecture students through a dynamic social platform, fostering collaboration, opportunities and creative exploration within the field. `,
@@ -45,7 +66,7 @@ export const projects: Array<ProjectInterface> = [
     show: true,
   },
   {
-    name: "Convexity",
+    name: "CHATs",
     role: "Front End Developer",
     description:
       "With Convexity Humanitarian Aids Transfer Solution (CHATS), we believe in the potential of the blockchain for the benefit of society.",

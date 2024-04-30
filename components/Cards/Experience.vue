@@ -12,7 +12,7 @@
           <h3 class="text-white opacity-90 font-medium md:text-xl">
             {{ experience.name }}
           </h3>
-          <p class="text-xs sm:text-sm text-main font-thin">
+          <p class="text-xs sm:text-sm text-main font-medium md:font-semibold">
             {{ experience.role }}
           </p>
         </div>

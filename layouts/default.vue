@@ -10,12 +10,28 @@
     <div
       class="w-full h-full px-5 sm:px-8 md:px-20 lg:px-24 xl:px-6 py-4 md:py-0"
     >
+      <!-- <div
+        v-if="loading"
+        class="flex justify-center items-center text-3xl text-white h-[100vh]"
+      >
+        <LoadingAnimation />
+      </div>
+      <div v-else> -->
       <slot />
+      <!-- </div> -->
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  const loading: Ref<boolean> = ref(true)
+
+  onMounted(() => {
+    setTimeout(() => {
+      loading.value = false
+    }, 5000)
+  })
+</script>
 
 <style>
   .layout-line {

@@ -27,7 +27,9 @@
           {{ project.name }}
         </h2>
 
-        <p class="text-main text-xs mb-2 items-stretch">
+        <p
+          class="text-main text-sm mb-2 items-stretch font-medium md:font-semibold"
+        >
           {{ project.role }}
         </p>
 

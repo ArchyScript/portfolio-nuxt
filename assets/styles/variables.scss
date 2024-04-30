@@ -1,12 +1,21 @@
 :root {
-    --main: turquoise;
-    --main-deep: #20524c;
-    --light: #ccd6f6;
-    --dark: #211e25;
-    --semi-dark: #2f293ae8;
-    --gray: #8892b0;
-    --hoodie-color: #d8c8b9;
-    /* 
+  --main: #0060aa;
+  --main-deep: #02335b;
+  --light: #cfe4f7;
+  --dark: #211e25;
+  --semi-dark: #2e2c35;
+  --gray: #7a879c;
+  --hoodie-color: #c5b9b3;
+  /* Suggested hoodie color */
+  //   --main: #0060aa;
+  //   --main-deep: #004080;
+  //   --light: #aad5ff;
+  //   --dark: #211e25;
+  //   --semi-dark: #2f293ae8;
+  //   --gray: #8892b0;
+  //   --hoodie-color: #d8c8b9;
+  /* 
+    #0060AA
     MAIN COMBO 
     --main: turquoise;
     --main-deep: #20524c;
@@ -36,5 +45,11 @@
     --main: #ff4500;  
     --main-deep: #8b2500;  
     --light: #ffe4e1;  
+
+    
+   COMBO 5 (LOGO DESIGN COLOR)
+    --main: #0060AA ;  
+    --main-deep: #004080;  
+    --light: #aad5ff;  
     */
 }

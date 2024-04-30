@@ -1,20 +1,31 @@
-interface Experience {
+interface TechIndustryExperience {
   name: string
-  desc: string
-  tags: string[]
-  links: {
-    name: string
-    url: string
-  }[]
+  type: string
+  role: string
+  workArrangement: string
+  duration: string
   description: {
     sm: string
     lg: string
   }
-  show: Boolean
 }
 
-// export const experiences: Array<Experience> = [
-export const experiences = [
+interface EducationalExperience {
+  name: string
+  type: string
+  role: string
+  workArrangement: string
+  duration: string
+  description: {
+    sm: string
+    lg: string
+  }
+}
+
+type Experience = TechIndustryExperience | EducationalExperience
+
+// export const experiences = [
+export const experiences: Array<Experience> = [
   {
     name: "Self Taught",
     type: "Tech Industry",
@@ -24,7 +35,7 @@ export const experiences = [
     description: {
       sm: `Started web development in February 2020 with HTML/CSS, transitioned to JavaScript in April 2020, and chose Vue.js as my primary frontend framework.`,
       lg: `I embarked on my exploration into the technology and programming space in February 2020, focusing on web development with HTML/CSS. Transitioned to JavaScript in April 2020, built projects, and ultimately chose 
-      <a href="https://vuejs.org/" target="_blank" class="text-main hover:opacity-80"> Vue.js  </a>
+      <a href="https://vuejs.org/" target="_blank" class="text-main hover:opacity-80 font-semibold md:font-bold"> Vue.js  </a>
      as my primary and preferred frontend framework.`,
     },
   },
@@ -38,7 +49,7 @@ export const experiences = [
       sm: `Pursuing a B.Sc in Architecture at <a href="https://oauife.edu.ng/" target="_blank" class="text-main hover:opacity-80"> OAU  </a>,
        combining architectural principles with technology. As an architect-in-training, I focus on innovative and user-centric frontend designs.`,
       lg: `Pursuing a B.Sc in Architecture at
-      <a href="https://oauife.edu.ng/" target="_blank" class="text-main hover:opacity-80 inline-flex"> OAU  </a>,
+      <a href="https://oauife.edu.ng/" target="_blank" class="text-main hover:opacity-80 inline-flex  font-semibold md:font-bold"> OAU  </a>,
      blending architectural principles with technology. As an architect-in-training, I refine problem-solving skills, infusing innovation and user-centricity into frontend designs. My educational journey fosters a unique perspective for a holistic approach to work.`,
     },
   },
@@ -72,7 +83,7 @@ export const experiences = [
     duration: "Ongoing",
     description: {
       sm: `Actively contributing as a collaborative team member in software development.`,
-      lg: `As a Software Developer within a professional team, I am not only technically proficient but also bring a wealth of experience as a dedicated team player. I have a proven track record of effective collaboration, having successfully contributed to collaborative software development initiatives in the past. Currently engaged in ongoing projects, I continue to actively participate in team discussions, value the insights of fellow developers, and foster an inclusive and collaborative environment. My commitment to effective team collaboration, developed through past experiences, remains a cornerstone of my approach as I contribute to creating positive and synergistic team dynamics.`,
+      lg: `As a Software Developer, I bring technical proficiency and a history of successful collaboration to my current projects. I actively contribute to team discussions and prioritize creating a positive and inclusive development environment.`,
     },
   },
   /* 
