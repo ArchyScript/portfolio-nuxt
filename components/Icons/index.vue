@@ -3,7 +3,7 @@
     <DeHtml5Original v-if="title === 'html'" />
     <DeCss3Original v-if="title === 'css'" />
     <DeJavascriptOriginal v-if="title === 'js'" />
-    <DeTailwindcssPlain v-if="title === 'tailwind'" />
+    <DeTailwindcssOriginal v-if="title === 'tailwind'" />
     <DeVuejsOriginal v-if="title === 'vue'" />
     <DeReactOriginal v-if="title === 'react'" />
     <DeSassOriginal v-if="title === 'sass'" />
@@ -48,7 +48,7 @@
     DeHtml5Original,
     DeCss3Original,
     DeJavascriptOriginal,
-    DeTailwindcssPlain,
+    DeTailwindcssOriginal,
     DeVuejsOriginal,
     DeReactOriginal,
     DeSassOriginal,
@@ -84,6 +84,7 @@
     IoOutlineClose,
     SiVercel,
   } from "@kalimahapps/vue-icons"
+
   const props = defineProps({
     title: {
       type: String,

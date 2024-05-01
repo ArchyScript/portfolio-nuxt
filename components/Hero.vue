@@ -1,6 +1,6 @@
 <template>
   <section
-    id="hero"
+    id="welcome"
     class="flex flex-col space-y-4 items-start !text-gray justify-center pb-16"
   >
     <div>

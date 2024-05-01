@@ -4,9 +4,10 @@
   >
     <div class="space-y-8 pt-4">
       <span
-        class="nav-link"
         v-for="(navLink, index) in navLinks"
         :key="`${navLink.title}-${index}`"
+        :class="activeId === navLink.route && 'active'"
+        class="nav-link"
       >
         <a :key="index" :href="`#${navLink.route}`"> {{ navLink.title }} </a>
       </span>
@@ -24,8 +25,8 @@
   import gsap from "gsap"
   import { useActive } from "vue-use-active-scroll"
 
-  const NavActions = ref([
-    { title: "Home", route: "home" },
+  const navLinks = ref([
+    { title: "Welcome", route: "welcome" },
     { title: "About", route: "about" },
     { title: "Tools", route: "tools" },
     { title: "Experience", route: "experience" },
@@ -33,25 +34,23 @@
     { title: "Contact", route: "contact" },
   ])
 
-  const targets = computed(() =>
-    NavActions.value.map(({ route }: any) => route)
-  )
+  const targets = computed(() => navLinks.value.map(({ route }: any) => route))
   const { activeId } = useActive(targets)
 
-  // onMounted(() => {
-  //   gsap.fromTo(
-  //     ".nav-link",
-  //     { opacity: 0, x: 20 },
-  //     {
-  //       opacity: 1,
-  //       x: 0,
-  //       stagger: 0.2,
-  //       duration: 0.35,
-  //       delay: 1.75,
-  //       ease: "linear",
-  //     }
-  //   )
-  // })
+  onMounted(() => {
+    gsap.fromTo(
+      ".nav-link",
+      { opacity: 0, x: 20 },
+      {
+        opacity: 1,
+        x: 0,
+        stagger: 0.2,
+        duration: 0.35,
+        delay: 1.75,
+        ease: "linear",
+      }
+    )
+  })
 </script>
 
 <style scoped>
@@ -59,7 +58,7 @@
     @apply transition-all duration-300 cursor-pointer font-medium hover:text-main hover:font-semibold  text-sm;
   }
   .nav-link.active {
-    @apply font-bold;
+    @apply font-bold text-main;
   }
   .nav-link:hover {
     transform: scale(1.1) !important;

@@ -94,6 +94,7 @@
     el.style.opacity = 0
     el.style.transform = "translateX(-100px)"
   }
+
   const enter = (el: any, done: any) => {
     gsap
       .to(el, {

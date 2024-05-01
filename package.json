@@ -12,14 +12,14 @@
     "@nuxt/devtools": "latest",
     "@types/node": "^18",
     "autoprefixer": "^10.4.14",
+    "gsap": "^3.12.5",
     "nuxt": "^3.5.2",
     "postcss": "^8.4.24",
     "sass": "^1.63.3",
-    "tailwindcss": "^3.3.2",
-    "gsap": "^3.10.4"
+    "tailwindcss": "^3.3.2"
   },
   "dependencies": {
-    "@kalimahapps/vue-icons": "^1.4.0",
+    "@kalimahapps/vue-icons": "^1.4.1",
     "@pinia/nuxt": "^0.4.11",
     "@vuelidate/core": "^2.0.3",
     "@vuelidate/validators": "^2.0.3",
