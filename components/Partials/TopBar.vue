@@ -12,8 +12,8 @@
           <nuxt-link to="/">
             <img
               class="h-10 w-10 sm:h-12 sm:w-12 cursor-pointer"
-              src="~/assets/images/logo.svg"
-              alt="Headshot"
+              src="/images/logo.svg"
+              alt="ArchyScript"
             />
           </nuxt-link>
         </a>
