@@ -7,7 +7,9 @@
       <div
         class="text-center max-w-xl flex flex-col space-y-4 sm:space-y-6 items-center"
       >
-        <p class="text-lg sm:text-xl">That's all folks</p>
+        <p class="text-lg sm:text-xl md:text-2xl font-medium">
+          That's all folks
+        </p>
 
         <p class="text-3xl sm:text-4xl md:text-6xl font-bold text-main">
           Get in Touch
@@ -33,8 +35,7 @@
 </template>
 
 <script setup lang="ts">
-  // const mql = window.matchMedia("(max-width: 700px)");
-
+  // const mql = window.matchMedia("(max-width: 700px)"); 
   // const show = ref(mql.matches);
 </script>
 

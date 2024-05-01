@@ -72,6 +72,6 @@
   }
 
   .card-circle {
-    @apply text-main text-xs sm:text-sm  md:text-xl font-bold border border-gray flex items-center justify-center rounded-full bg-semi-dark flex-shrink-0 h-8 w-8 md:h-16 md:w-16;
+    @apply text-main text-xs sm:text-sm  md:text-xl font-bold border border-main flex items-center justify-center rounded-full bg-semi-dark flex-shrink-0 h-8 w-8 md:h-16 md:w-16;
   }
 </style>

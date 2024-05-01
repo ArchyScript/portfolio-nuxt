@@ -65,6 +65,11 @@
 </script>
 
 <style scoped lang="scss">
+  .description {
+    @apply text-base md:text-lg xl:text-xl;
+  }
+
+  /*
   #about {
     color: var(--gray);
     .inner {
@@ -76,5 +81,5 @@
         @apply flex flex-col justify-center items-center;
       }
     }
-  }
+  } */
 </style>
