@@ -13,6 +13,9 @@ interface ProjectInterface {
   show: boolean
 }
 
+// https://archyscript-ultimate-react-dashboard.netlify.app
+// https://github.com/ArchyScript/ultimate-react-dashboard
+
 export const projects: Array<ProjectInterface> = [
   {
     name: "Transfer XO",
