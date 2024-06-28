@@ -1,6 +1,5 @@
 <template>
   <div class="loading-container">
-    test
     <img
       src="~/assets/images/me.png"
       class="h-40 w-40"
