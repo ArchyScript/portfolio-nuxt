@@ -7,7 +7,7 @@
       <img
         class="img h-10 w-10 xl:h-12 xl:w-12 cursor-pointer"
         src="~/public/images/logo.svg"
-        alt="Headshot"
+        alt="Logo"
       />
     </nuxt-link>
 
