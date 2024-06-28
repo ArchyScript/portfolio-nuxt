@@ -6,7 +6,7 @@
     <nuxt-link to="/">
       <img
         class="img h-10 w-10 xl:h-12 xl:w-12 cursor-pointer"
-        src="/images/logo.svg"
+        src="~/assets/images/logo.svg"
         alt="Headshot"
       />
     </nuxt-link>
