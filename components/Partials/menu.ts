@@ -5,30 +5,16 @@ export type MenuTypes = {
 }
 export type NavLinkTypes = {
   title: string
-  href: string
+  route: string
 }
 
 export const nav: NavLinkTypes[] = [
-  {
-    title: "About",
-    href: "#about",
-  },
-  {
-    title: "Tools",
-    href: "#tools",
-  },
-  {
-    title: "Experience",
-    href: "#experience",
-  },
-  {
-    title: "Works",
-    href: "#works",
-  },
-  {
-    title: "Contact",
-    href: "#contact",
-  },
+  { title: "Welcome", route: "welcome" },
+  { title: "About", route: "about" },
+  { title: "Tools", route: "tools" },
+  { title: "Experience", route: "experience" },
+  { title: "Works", route: "works" },
+  { title: "Contact", route: "contact" },
 ]
 
 export const menu: MenuTypes[] = [

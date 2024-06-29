@@ -12,7 +12,7 @@
           <nuxt-link to="/">
             <img
               class="h-10 w-10 sm:h-12 sm:w-12 cursor-pointer"
-              src="~/assets/images/logo.svg"
+              src="~/assets/images/original-logo.svg"
               alt="ArchyScript"
             />
           </nuxt-link>
@@ -41,9 +41,10 @@
             @click="close"
           >
             <a
-              :href="navLink.href"
+              :href="`#${navLink.route}`"
               rel="noopener noreferrer"
-              class="text-gray !hover:text-main text-xl font-bold"
+              class="nav-link text-gray !hover:text-main text-xl font-bold"
+              :class="activeId === navLink.route && '!font-bold !text-main'"
             >
               {{ navLink.title }}
             </a>
@@ -78,10 +79,13 @@
 
 <script setup lang="ts">
   import gsap from "gsap"
+  import { useActive } from "vue-use-active-scroll"
   import { menu, nav } from "./menu"
   const menuLinks = ref(menu)
   const navLinks = ref(nav)
 
+  const targets = computed(() => navLinks.value.map(({ route }: any) => route))
+  const { activeId } = useActive(targets)
   const showMenu = ref(false)
   const toggleMenu = () => {
     if (!showMenu.value) return (showMenu.value = !showMenu.value)

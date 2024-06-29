@@ -25,15 +25,8 @@
   import gsap from "gsap"
   import { useActive } from "vue-use-active-scroll"
 
-  const navLinks = ref([
-    { title: "Welcome", route: "welcome" },
-    { title: "About", route: "about" },
-    { title: "Tools", route: "tools" },
-    { title: "Experience", route: "experience" },
-    { title: "Works", route: "works" },
-    { title: "Contact", route: "contact" },
-  ])
-
+  import { nav } from "./menu"
+  const navLinks = ref(nav)
   const targets = computed(() => navLinks.value.map(({ route }: any) => route))
   const { activeId } = useActive(targets)
 
