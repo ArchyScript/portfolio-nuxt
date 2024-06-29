@@ -19,7 +19,7 @@
         target="_blank"
         rel="noopener noreferrer"
         :title="menuLink.title"
-        class="text-gray"
+        class="text-gray hover:text-main"
       >
         <!-- hover:text-[#0060AA] -->
         <Icons :title="menuLink.icon" class="text-lg" />
