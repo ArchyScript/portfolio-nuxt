@@ -84,11 +84,9 @@
 
   const showMenu = ref(false)
   const toggleMenu = () => {
-    if (!showMenu.value) {
-      showMenu.value = !showMenu.value
-    } else {
-      close()
-    }
+    if (!showMenu.value) return (showMenu.value = !showMenu.value)
+
+    close()
   }
   const beforeEnter = (el: any) => {
     el.style.opacity = 0
