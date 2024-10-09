@@ -13,9 +13,6 @@ interface ProjectInterface {
   show: boolean
 }
 
-// https://archyscript-ultimate-react-dashboard.netlify.app
-// https://github.com/ArchyScript/ultimate-react-dashboard
-
 export const projects: Array<ProjectInterface> = [
   {
     name: "Transfer XO",
@@ -155,6 +152,48 @@ export const projects: Array<ProjectInterface> = [
     isLive: true,
     show: true,
   },
+  // {
+  //   name: "Unsplash Clone",
+  //   role: "Front End ",
+  //   description: `Developed a  basic clone for unsplash.com... Aimed at consuming api and responsiveness`,
+  //   tags: ["TypeSc", "SCSS", "Vue"],
+  //   links: [
+  //     {
+  //       title: "Live URL",
+  //       url: "https://archyscript-unsplash-clone.netlify.app/",
+  //       icon: "edit",
+  //     },
+  //     {
+  //       title: "Github",
+  //       url: "https://github.com/ArchyScript/unsplash-clone",
+  //       icon: "github",
+  //     },
+  //   ],
+  //   isClient: false,
+  //   isLive: true,
+  //   show: true,
+  // },
+  // {
+  //   name: "React Dashboard",
+  //   role: "Front End ",
+  //   description: `Developed a  simple dashboard with React JS`,
+  //   tags: ["Javascript", "Tailwind", "React"],
+  //   links: [
+  //     {
+  //       title: "Live URL",
+  //       url: "https://archyscript-ultimate-react-dashboard.netlify.app",
+  //       icon: "edit",
+  //     },
+  //     {
+  //       title: "Github",
+  //       url: "https://github.com/ArchyScript/ultimate-react-dashboard",
+  //       icon: "github",
+  //     },
+  //   ],
+  //   isClient: false,
+  //   isLive: true,
+  //   show: true,
+  // },
   {
     name: "Skrind",
     role: "Front End Developer",
